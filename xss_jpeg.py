@@ -42,7 +42,15 @@ if __name__ == '__main__':
 
 	if(len(sys.argv)  < 2):
 
-		exif('python3 xss_jpeg.py "alert(1)"')
+		exif('python3 xss_jpeg.py "alert(1)" 120 120')
+	try:
+
+		xSize = int(sys.argv[2])
+		ySize = int(sys.argv[3])
+
+	except:
+		xSize = 120
+		ySize = 120
 
 	script = sys.argv[1]
 
