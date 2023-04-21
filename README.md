@@ -1,4 +1,4 @@
-# XSS_JPEG
+# XSS_JPEG for Linux
 ### create XSS JPEG file and Trigger XSS
 
 1. python3 xss_jpeg.py "alert(1)"
